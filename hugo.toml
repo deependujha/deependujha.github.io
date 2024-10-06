@@ -1,5 +1,5 @@
 baseURL = 'https://deependujha.github.io/' # 'https://deependujha.xyz/'
-copyright = "© Deependu Jha" 
+copyright = "© Deep" 
 languageCode = 'en-us' 
 theme = 'archie' 
 title = 'Deependu Jha' 
@@ -29,11 +29,6 @@ url = "https://github.com/deependujha"
 icon = "twitter"
 name = "Twitter"
 url = "https://twitter.com/deependu__"
-
-[[params.social]]
-icon = "send"
-name = "Telegram"
-url = "https://t.me/deependu_jha"
 
 [[params.social]]
 icon = "mail"

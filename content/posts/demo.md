@@ -2,7 +2,7 @@
 title = 'Demo blog'
 description = "Examples on how to do something while writing a blog (like adding an image, etc.)"
 date = 2024-07-08T18:24:32+05:30
-draft = false
+draft = true
 tags = []
 +++
 
