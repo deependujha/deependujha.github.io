@@ -2,7 +2,7 @@
 title = 'Introduction to CUDA programming'
 description = ""
 date = 2024-10-06T16:08:06+05:30
-draft = true
+draft = false
 tags = []
 +++
 
