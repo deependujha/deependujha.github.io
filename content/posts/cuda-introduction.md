@@ -1,9 +1,9 @@
 +++
 title = 'Introduction to CUDA programming'
-description = ""
+description = "A simple introduction to CUDA programming"
 date = 2024-10-06T16:08:06+05:30
 draft = false
-tags = []
+tags = ["cuda", "gpu", "deep-learning"]
 +++
 
 ## What is CUDA?
@@ -20,7 +20,7 @@ In 2014, NVIDIA released the first CUDA-enabled GPU, the **Tesla GPU**, which wa
 
 ## Terminologies
 
-- **`host` refers to the `CPU` and its memory**
-- **`device` refers to the `GPU` and its memory**
-- **`kernels` are functions executed on the device (GPU)**
+- **`host`** refers to the **`CPU`** and its memory
+- **`device`** refers to the **`GPU`** and its memory
+- **`kernels`** are functions executed on the **device (GPU)**
 
