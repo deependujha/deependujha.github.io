@@ -1,0 +1,9 @@
+<figure>
+    <video controls height="{{ .Get "height" }}" width="{{ .Get "width" }}">
+        <source src="{{ .Get "src" }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {{ if .Get "title" }}
+        <figcaption>{{ .Get "title" }}</figcaption>
+    {{ end }}
+</figure>
