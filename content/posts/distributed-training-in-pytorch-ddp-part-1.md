@@ -37,6 +37,8 @@ In this blog, we will discuss `DDP`. Refer to [fsdp blog, if you want to learn a
 
 As the word `Distributed Data parallel` suggests, we are distributing the data parallely across multiple GPUs. 
 
+{{< figure src="/02-distributed-training/ddp_visualization.png" title="DDP ring-allreduce" >}}
+
 In DDP, we have a model and an optimizer. We copy the model across all the GPUs and then we copy the optimizer with same random seed across all the GPUs.
 
 Then, we have a `DistributedSampler` which is responsible for distributing the data across all the GPUs, and makes sure each GPU gets different data.
@@ -53,7 +55,7 @@ So, the better approach is to use **`ring-allreduce`** algorithm. Let's say, aft
 
 Now, we have all the gradients on all the GPUs. We didn't waited for the complete backward pass to be done on all the GPUs. Also, no master GPU is needed. So, we can now average the gradients across all the GPUs and then update the model and optimizer.
 
-{{< video src="/02-distributed-training/ddp_visualization.mkv" title="DDP visualization" height="200" width="350" >}}
+- [Checkout this video from Pytorch team explaining the DDP](https://www.youtube.com/watch?v=Cvdhwx-OBBo&list=PL_lsbAsL_o2CSuhUhJIiW0IkdT5C2wGWj&index=2)
 
 ---
 

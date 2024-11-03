@@ -10,12 +10,18 @@ pygmentsstyle = "monokai"
 
 paginate = 7 # articles per page
 
+[markup]
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
+
 [params]
 favicon = "/gpu.png" # "/favicon.ico" 
 katex = true # enable KaTeX support
 mathjax = true # enable MathJax support
 mode = "toggle" # color-mode → light,dark,toggle or auto
-subtitle = "I’m Deependu, a `self-taught` computer enthusiast with a passion for all things tech."
+subtitle = "I’m Deependu, a `self-taught` computer enthusiast with a passion for all things tech." 
 useCDN = false # don't use CDNs for fonts and icons, instead serve them locally.
 
 # Social Tags
