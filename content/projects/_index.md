@@ -3,10 +3,10 @@ title: Projects
 layout: projects
 ---
 
-## Projects
+## [DeepTensor](https://github.com/deependujha/DeepTensor)
 
-### [Project 1](https://example.com/project-1)
+- A minimal PyTorch-like deep learning library focused on custom autograd and efficient tensor operations.
 
-### [Project 2](https://example.com/project-2)
+## [DeepLang](https://github.com/deependujha/DeepLang)
 
-### [Project 3](https://example.com/project-3)
+- A lightweight, experimental interpreter framework designed to explore core concepts in language frontend, intermediate representation (IR), analysis and transformation passes, and specialized architecture backends. 🚀
