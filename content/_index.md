@@ -12,4 +12,6 @@ toc: false
 - Reinforcement Learning enthusiast
 - 3 magical words: **`Probably Approximately Correct (PAC)`**
 
-> Don't call it regret, call it replay buffer.
+```txt
+Don't call it regret, call it replay buffer. 😉
+```
