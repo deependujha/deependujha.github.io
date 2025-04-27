@@ -26,7 +26,9 @@ Q-learning is a model-free reinforcement learning algorithm used to train agents
 
 $$ Q(s, a) = E[R_t | s_t = s, a_t = a] $$
 
-> expected future reward if the agent is in state `s` and takes action `a`.
+```txt
+expected future reward if the agent is in state `s` and takes action `a`.
+```
 
 ---
 
@@ -50,16 +52,18 @@ $$ Q(s, a) = r + \gamma \max_{a'} Q(s', a') $$
 - Temporal difference (TD) learning means, we don't wait for the final outcome to update the Q-value.
 - Instead, we update the Q-value based on the immediate reward and the estimated value of the next state.
 
-> It's like:
->
-> - You drive 10 meters — it feels good, so you think: "Hey, driving is fun!" (reward!)
-> - You drive 100 meters and reach KFC — it feels even better!
->
-> Now — when you first started, you didn’t know driving 10 meters was leading to the KFC.
->
-> Over time, you realize:
->
-> - "Ohh, that small 10-meter drive was actually important, because it eventually got me to the KFC!"
+```md
+It's like:
+
+- You drive 10 meters — it feels good, so you think: "Hey, driving is fun!" (reward!)
+- You drive 100 meters and reach KFC — it feels even better!
+
+Now — when you first started, you didn’t know driving 10 meters was leading to the KFC.
+
+Over time, you realize:
+
+- "Ohh, that small 10-meter drive was actually important, because it eventually got me to the KFC!"
+```
 
 ---
 

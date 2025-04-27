@@ -40,9 +40,11 @@ weight: 100
 
 ![Discount factor](/blogs/rl/discount_factor.jpeg)
 
-> - Higher gamma means the agent will consider future rewards more.
-> - Lower gamma means the agent will consider immediate rewards more.
-> - The discount factor is a hyperparameter that can be tuned based on the task.
+```md
+- Higher gamma means the agent will consider future rewards more.
+- Lower gamma means the agent will consider immediate rewards more.
+- The discount factor is a hyperparameter that can be tuned based on the task.
+```
 
 ---
 
@@ -56,7 +58,9 @@ weight: 100
 - **Policy**: A strategy that the agent employs to determine the next action based on the current state.
 - **Reward**: A `scalar` feedback signal received from the environment after taking an action.
 
-> Remember: Observation won't always be equal to state. For example, a robot may only see what's in front of it, but the state may include the entire environment.
+{{< callout type="error" >}}
+  Remember: Observation won't always be equal to state. For example, a robot may only see what's in front of it, but the state may include the entire environment.
+{{< /callout >}}
 
 ---
 
@@ -102,13 +106,18 @@ First, let's understand: **What is policy?**
 - Now, your friend tells you, if you start trading and buy `AAPL` stock, and after that you follow his instagram course-seller guru, you will make $100000 in 1 month.
 - So, it's like, if you reach state `s`, and take action `a`, and after that you follow the policy $\pi$ (his instagram course-seller guru), you will make $100000 in 1 month.
 
-> - Here, We also consider the action that you need to take after reaching the state.
-> - So, it's like a mapping from state-action pair to expected return.
+```md
+- Here, We also consider the action that you need to take after reaching the state.
+- So, it's like a mapping from state-action pair to expected return.
+```
 
 ---
 
+```md
 > - If you reach stanford, you can become a millionaire. (state-value function)
 > - If you reach stanford and do a cs degree, you can become a millionaire. (action-value function)
+```
+
 {{% /details %}}
 
 ---
@@ -116,19 +125,24 @@ First, let's understand: **What is policy?**
 ## Markov Decision Process (MDP)
 
 - If I've complete details of the current state, I can predict the just next state. I don't need to know the previous states.
-
-> - Anything that satisfies the Markov property is called a Markov process.
-> - And, we can we make something satisfy the Markov property by adding some extra information to the state.
+- Anything that satisfies the Markov property is called a Markov process.
+- And, we can we make something satisfy the Markov property by adding some extra information to the state.
 
 ---
 
 ## Bellman Equation
 
 ![state-value bellman equation](/blogs/rl/bellman-equation-state-value.png)
-> max value of the immediate reward for all possible actions + value of the next state.
+
+```md
+- max value of the immediate reward for all possible actions + value of the next state.
+```
 
 ![action-value bellman equation](/blogs/rl/bellman-equation-action-value.png)
-> expected value of the immediate reward + expected value of the next state.
+
+```md
+- expected value of the immediate reward + expected value of the next state.
+```
 
 ---
 
