@@ -22,7 +22,9 @@ weight: 100
 - Agent observes the environment and takes actions on it.
 - The environment provides feedback in the form of rewards.
 
-> The agent learns to maximize the cumulative reward over time.
+```md
+The agent learns to maximize the cumulative reward over time.
+```
 
 ---
 
@@ -99,7 +101,7 @@ First, let's understand: **What is policy?**
 - So, it's like, if you reach state `s`, and follow the policy $\pi$ (his instagram course-seller guru), you will get $1000 in 1 month.
 - It says nothing about the action you take, just the state you are in.
 
-> So, it's like a mapping from state to expected return.
+So, it's like a mapping from state to expected return.
 
 #### Now: **What is action-value function?**
 
@@ -114,8 +116,8 @@ First, let's understand: **What is policy?**
 ---
 
 ```md
-> - If you reach stanford, you can become a millionaire. (state-value function)
-> - If you reach stanford and do a cs degree, you can become a millionaire. (action-value function)
+- If you reach stanford, you can become a millionaire. (state-value function)
+- If you reach stanford and do a cs degree, you can become a millionaire. (action-value function)
 ```
 
 {{% /details %}}

@@ -86,7 +86,9 @@ $$ Q(s, a) \leftarrow Q(s, a) + \alpha [r + \gamma \max_{a'} Q(s', a') - Q(s, a)
 - Choose a random action with probability `ε`.
 - This helps the agent to explore new actions and avoid getting stuck in local optima.
 
-> Introduce randomness in the action selection process to explore the environment.
+```md
+Introduce randomness in the action selection process to explore the environment.
+```
 
 ---
 
